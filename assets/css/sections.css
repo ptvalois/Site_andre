@@ -1,0 +1,16 @@
+
+#home, #sobre, #formacao, #especialidades, #atendimento, #contato {
+  scroll-margin-top: 100px;
+}
+.contact-card__intro {
+  max-width: 760px;
+}
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.contact-item .button {
+  margin-top: .5rem;
+  width: fit-content;
+}
