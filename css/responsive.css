@@ -1,0 +1,118 @@
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .titulo-secao {
+    font-size: 2.2rem;
+  }
+
+  .hero-inner {
+    grid-template-columns: 220px 1fr;
+  }
+
+  .hero-foto img {
+    width: 220px;
+  }
+
+  .hero-cards,
+  .cards-grid,
+  .formacao-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==================================================
+   TABLET E MOBILE
+================================================== */
+
+@media (max-width: 992px) {
+  .sobre-grid,
+  .experiencia-card {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-titulo,
+  .formacao-titulo {
+    font-size: 2.2rem;
+  }
+}
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+  .titulo-secao {
+    font-size: 1.9rem;
+  }
+
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  /* Header */
+
+  .main-nav,
+  .btn-agendar {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Hero */
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-foto {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-foto img {
+    width: 220px;
+  }
+
+  .hero-cards,
+  .cards-grid,
+  .formacao-grid,
+  .atendimento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Sobre */
+
+  .sobre-section {
+    padding: 4rem 0;
+  }
+
+  .sobre-galeria {
+    grid-template-columns: 1fr;
+  }
+
+  /* Experiência Internacional */
+
+  .experiencia-foto {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .experiencia-titulo {
+    font-size: 1.6rem;
+  }
+  /*Footer */
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-info {
+    text-align: center;
+  }
+}

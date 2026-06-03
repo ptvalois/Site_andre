@@ -1,759 +1,696 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dr. André Brandão - Otorrinolaringologista em Salvador. Especialista em Medicina do Sono, Apneia do Sono, Ronco e Cirurgias Avançadas da Via Aérea.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dr. André Brandão - Otorrinolaringologista em Salvador. Especialista em Medicina do Sono, Apneia do Sono, Ronco e Cirurgias Avançadas da Via Aérea."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Links CSS  -->
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/header.css">
+<link rel="stylesheet" href="./css/sections.css">
+<link rel="stylesheet" href="./css/responsive.css">
+
+
     <title>Dr. André Brandão | Otorrinolaringologia • Medicina do Sono</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
-        
-        .heading-font {
-            font-family: 'Playfair Display', sans-serif;
-        }
-        
-        .nav-link {
-            position: relative;
-        }
-        .nav-link:after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: #22c55e;
-            transition: width 0.3s ease;
-        }
-        .nav-link:hover:after { width: 100%; }
-        
-        .whatsapp-float {
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.12); }
-        }
-        
-        .hero-bg {
-            background: linear-gradient(rgba(15, 76, 129, 0.82), rgba(15, 76, 129, 0.88)), url('consultorio_1.jpeg') center/cover no-repeat;
-        }
+  </head>
+  <body>
+    <!-- ── HEADER ──────────────────────────────────────────── -->
+    <header class="site-header">
+      <div class="inner">
+        <div class="logo">
+          <h1>Dr. André Brandão</h1>
+          <p>Otorrinolaringologia • Medicina do Sono</p>
+        </div>
 
-        /* Font Awesome Icons - CSS Interno (substituição do CDN) */
-        .fa, .fas, .far, .fab {
-            font-family: "Font Awesome 6 Free";
-            font-weight: 900;
-        }
-        .fa-brands, .fab {
-            font-family: "Font Awesome 6 Brands";
-            font-weight: 400;
-        }
-        
-        /* Ícones mais usados */
-        .fa-whatsapp:before { content: "\f232"; }
-        .fa-phone:before { content: "\f095"; }
-        .fa-bars:before { content: "\f0c9"; }
-        .fa-chevron-down:before { content: "\f078"; }
-        .fa-check:before { content: "\f00c"; }
-        
-        /* Outros ícones usados no site */
-        .fa-solid.fa-phone { content: "\f095"; }
-        .fa-solid.fa-bars { content: "\f0c9"; }
-        .fa-solid.fa-chevron-down { content: "\f078"; }
-        .fa-brands.fa-whatsapp { content: "\f232"; }
-
-        <style>
- @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
-
-.heading-font {
-    font-family: 'Playfair Display', sans-serif;
-}
-
-.nav-link {
-    position: relative;
-}
-
-/* seus outros estilos */
-
-
-/* ============================
-   RESPONSIVIDADE GLOBAL RWD
-============================ */
-
-/* Mobile */
-body {
-    font-size: 14px;
-}
-
-/* Tablet */
-@media (min-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-}
-
-/* Desktop */
-@media (min-width: 1024px) {
-    body {
-        font-size: 18px;
-    }
-}
-
-
-    </style>
-</head>
-
-
-<!-- Botão Acessibilidade -->
-
-
-
-<body class="font-sans text-gray-800">
-
-<!-- HEADER ATUALIZADO - com título grande visível -->
-<header class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-        <!-- Logo + Título visível -->
-        
-<div class="flex items-center gap-x-0">
-    <div>
-        <h1 class="text-2xl md:text-3xl font-bold text-[#0f4c81] heading-font tracking-tight leading-tight">
-            Dr. André Brandão
-        </h1><p class="text-xs md:text-sm text-gray-600 mt-0 md:-mt-1 leading-tight">
-                    Otorrinolaringologia • Medicina do Sono
-        </p>
-    </div>
-</div>
-
-        <!-- Menu -->
-        <nav class="hidden md:flex items-center gap-x-8 text-gray-700 font-medium">
-            <a href="#home" class="nav-link">Início</a>
-            <a href="#sobre" class="nav-link">Sobre</a>
-            <a href="#formacao" class="nav-link">Formação</a>
-            <!--<a href="#especialidades" class="nav-link">Especialidades</a> -->
-            <a href="#atendimento" class="nav-link">Atendimento</a>
+        <nav class="main-nav">
+          <a href="#home">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#formacao">Formação</a>
+          <a href="#atendimento">Atendimento</a>
         </nav>
 
-        <!-- Botão Agende -->
-        <a href="#"
-   data-whatsapp-link
-   target="_blank"
-   class="hidden md:flex items-center gap-x-2 bg-[#22c55e] hover:bg-[#16a34a] text-white px-6 py-3 rounded-full font-semibold text-sm">
+     <a
+  href="#"
+  data-whatsapp-link
+  class="btn-agendar">
+  Agende sua Consulta
+</a>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20">
-        <path fill="#fff" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.1 0-65.6-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.3-16.4-14.6-27.4-32.7-30.7-38.2-3.2-5.6-.4-8.6 2.4-11.4 2.6-2.5 5.6-6.5 8.3-9.7 2.8-3.3 3.8-5.7 5.6-9.4 1.9-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.3 5.7 23.7 9.1 31.7 11.7 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-    </svg>
+      
 
-    Agende sua Consulta
-        </a>
+      <nav id="mobileMenu" class="mobile-menu">
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#formacao">Formação</a>
+        <a href="#atendimento">Atendimento</a>
+        <a href="#" data-whatsapp-link class="btn-agendar-mobile"
+          >Agende sua Consulta</a
+        >
+      </nav>
+    </header>
 
-        <button data-mobile-toggle aria-controls="mobileMenu" aria-expanded="false" class="md:hidden text-3xl text-[#0f4c81]">
-            <span class="fa fa-bars"></span>
-        </button>
-    </div>
-</header>
-    <!-- MOBILE MENU -->
-    <div id="mobileMenu" class="hidden md:hidden bg-white border-t px-6 py-6">
-        <div class="flex flex-col gap-y-5 text-lg font-medium">
-            <a href="#home" data-mobile-toggle aria-controls="mobileMenu" aria-expanded="false" class="py-2">Início</a>
-            <a href="#sobre" data-mobile-toggle aria-controls="mobileMenu" aria-expanded="false" class="py-2">Sobre</a>
-            <a href="#formacao" data-mobile-toggle aria-controls="mobileMenu" aria-expanded="false" class="py-2">Formação</a>
-            <a href="#especialidades" data-mobile-toggle aria-controls="mobileMenu" aria-expanded="false" class="py-2">Especialidades</a>
-            <a href="#atendimento" data-mobile-toggle aria-controls="mobileMenu" aria-expanded="false" class="py-2">Atendimento</a>
-        </div>
-    </div>
-
-  
- <!-- HERO -->
-<section id="home" class="bg-[#f8fafc] h-screen flex items-start relative overflow-hidden pt-10 border-b-4 border-[#0f4c81]">
-<!--<video autoplay muted loop playsinline
-       class="absolute inset-0 w-full h-full object-cover z-0">
-    <source src="./assets/videos/fundo.mp4" type="video/mp4">
-</video> --->
-
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 items-start">
+  <!-- ── HERO ────────────────────────────────────────────── -->
+<section id="home" class="hero-section">
+  <div class="hero-inner">
 
     <!-- FOTO -->
-    <div class="lg:col-span-3 flex flex-col items-center">
-<!--
-<picture>
-    <source srcset="./assets/img/Cirugia_robótica_3.jxl" type="image/jxl">
-    <source srcset="./assets/img/Cirugia_robótica_3.webp" type="image/webp">
-
-    <img 
-        src="./assets/img/Cirugia_robótica_3.png"
-        alt="Consultório Dr. André Brandão"
-        loading="lazy"
-        class="w-40 sm:w-52 md:w-60 lg:w-full max-w-xs rounded-3xl shadow-xl border border-white/20 object-cover"
-    >
-</picture>
--->
-        <div class="mt-4 text-centert">
-            <h3 class="font-semibold text-sm sm:text-base md:text-lg mb-2">
-                <!--CRM-BA 31.954-->
-            </h3>
-
-            <h3 class="font-semibold text-sm sm:text-base md:text-lg">
-                <!--RQE: XXXXX-UF-->
-            </h3>
-        </div>
-
+    <div class="hero-foto">
+      <img
+        src="./assets/img/foto_1_formatura.jpeg"
+        alt="Dr. André Brandão"
+      />
     </div>
 
     <!-- CARDS -->
-    <div class="lg:col-span-9">
+    <div class="hero-cards">
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-4">
+      <div class="card-especialidade">
+        <span class="emoji-card">🛏️</span>
+        <h3>Medicina do Sono</h3>
+        <p>Diagnóstico e tratamento completo.</p>
+      </div>
 
-            <!-- CARDS -->
-            <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 shadow-xl hover:bg-white/20 transition-all">
-                <div class="text-xl md:text-2xl mb-2">🛏️</div>
-                <h3 class="font-semibold text-sm md:text-base mb-2 text-[#0f4c81]">Medicina do Sono</h3>
-                <p class="text-xs md:text-sm text-gray-600">
-                    Diagnóstico e tratamento completo.
-                </p>
+      <div class="card-especialidade">
+        <span class="emoji-card">😴</span>
+        <h3>Ronco e Apneia</h3>
+        <p>Tratamento clínico e cirúrgico.</p>
+      </div>
+
+      <div class="card-especialidade">
+        <span class="emoji-card">🪄</span>
+        <h3>Via Aérea</h3>
+        <p>Técnicas minimamente invasivas.</p>
+      </div>
+
+      <div class="card-especialidade">
+        <span class="emoji-card">👂</span>
+        <h3>Otorrino Geral</h3>
+        <p>Ouvido, nariz e garganta.</p>
+      </div>
+
+      <div class="card-especialidade">
+        <span class="emoji-card">🔬</span>
+        <h3>Cirurgias Nasais</h3>
+        <p>Alta precisão endoscópica.</p>
+      </div>
+
+      <div class="card-especialidade">
+        <span class="emoji-card">🤖</span>
+        <h3>Cirurgia Robótica</h3>
+        <p>Tecnologia avançada.</p>
+      </div>
+
+    </div>
+    <!-- FIM DOS CARDS -->
+
+    <!-- BOTÃO CONHEÇA O MÉDICO -->
+    <div class="hero-button-container">
+      <a href="#sobre" class="btn-conheca-medico">
+       Conheça o Médico
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── SOBRE O MÉDICO ─────────────────────────────────── -->
+   <section id="sobre" class="sobre-section">
+
+    <div class="sobre-container">
+
+        <div class="sobre-grid">
+
+            <!-- Fotos -->
+            <div class="sobre-galeria">
+
+                <div class="sobre-foto">
+                    <picture>
+                        <source srcset="./assets/img/consultorio_1.jxl" type="image/jxl">
+                        <source srcset="./assets/img/consultorio_1.webp" type="image/webp">
+
+                        <img
+                            src="./assets/img/consultorio_1.jpeg"
+                            alt="Recepção Clínica Otorrino Iguatemi"
+                            loading="lazy">
+                    </picture>
+                </div>
+
+                <div class="sobre-foto">
+                    <picture>
+                        <source srcset="./assets/img/consultorio_2.jxl" type="image/jxl">
+                        <source srcset="./assets/img/consultorio_2.webp" type="image/webp">
+
+                        <img
+                            src="./assets/img/consultorio_2.jpeg"
+                            alt="Consultório Dr. André Brandão"
+                            loading="lazy">
+                    </picture>
+                </div>
+
+                <div class="sobre-foto">
+                    <picture>
+                        <source srcset="./assets/img/consultorio_3.jxl" type="image/jxl">
+                        <source srcset="./assets/img/consultorio_3.webp" type="image/webp">
+
+                        <img
+                            src="./assets/img/consultorio_3.jpeg"
+                            alt="Recepção Clínica Otorrino Iguatemi"
+                            loading="lazy">
+                    </picture>
+                </div>
+
+                <div class="sobre-foto">
+                    <picture>
+                        <source srcset="./assets/img/consultorio_4.jxl" type="image/jxl">
+                        <source srcset="./assets/img/consultorio_4.webp" type="image/webp">
+
+                        <img
+                            src="./assets/img/consultorio_4.jpeg"
+                            alt="Consultório Dr. André Brandão"
+                            loading="lazy">
+                    </picture>
+                </div>
+
             </div>
 
-            <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 shadow-xl hover:bg-white/20 transition-all">
-                <div class="text-xl md:text-2xl mb-2">😴</div>
-                <h3 class="font-semibold text-sm md:text-base mb-2 text-[#0f4c81]">Ronco e Apneia</h3>
-                <p class="text-xs md:text-sm text-gray-600">
-                    Tratamento clínico e cirúrgico.
-                </p>
-            </div>
+            <!-- Texto -->
+            <div class="sobre-conteudo">
 
-            <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 shadow-xl hover:bg-white/20 transition-all">
-                <div class="text-xl md:text-2xl mb-2">🪄</div>
-                <h3 class="font-semibold text-sm md:text-base mb-2 text-[#0f4c81]">Via Aérea</h3>
-                <p class="text-xs md:text-sm text-gray-600">
-                    Técnicas minimamente invasivas.
-                </p>
-            </div>
+                <div class="sobre-subtitulo">
+    SOBRE O MÉDICO
+</div>
 
-            <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 shadow-xl hover:bg-white/20 transition-all">
-                <div class="text-xl md:text-2xl mb-2">👂</div>
-                <h3 class="font-semibold text-sm md:text-base mb-2 text-[#0f4c81]">Otorrino Geral</h3>
-                <p class="text-xs md:text-sm text-gray-600">
-                    Ouvido, nariz e garganta.
-                </p>
-            </div>
+<h2 class="sobre-titulo">
+    Dr. André Brandão
+</h2>
 
-            <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 shadow-xl hover:bg-white/20 transition-all">
-                <div class="text-xl md:text-2xl mb-2">🔬</div>
-                <h3 class="font-semibold text-sm md:text-base mb-2 text-[#0f4c81]">Cirurgias Nasais</h3>
-                <p class="text-xs md:text-sm text-gray-600">
-                    Alta precisão endoscópica.
-                </p>
-            </div>
+                <div class="sobre-texto">
 
-            <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 shadow-xl hover:bg-white/20 transition-all">
-                <div class="text-xl md:text-2xl mb-2">🤖</div>
-                <h3 class="font-semibold text-sm md:text-base mb-2 text-[#0f4c81]">Cirurgia Robótica</h3>
-                <p class="text-xs md:text-sm text-gray-600">
-                    Tecnologia avançada.
-                </p>
+                    <p>
+                        Sou médico otorrinolaringologista, com atuação em
+                        Otorrinolaringologia geral e foco em
+                        <strong>Medicina do Sono</strong> e
+                        <strong>cirurgias avançadas da via aérea</strong>.
+                    </p>
+
+                    <p>
+                        Realizo atendimento de pacientes com doenças do ouvido,
+                        nariz e garganta, bem como com alterações relacionadas ao
+                        ronco, à apneia obstrutiva do sono e a outros distúrbios
+                        respiratórios do sono.
+                    </p>
+
+                    <p>
+                        Minha prática é baseada em avaliação clínica cuidadosa,
+                        individualizada e fundamentada em evidências científicas,
+                        respeitando a necessidade específica de cada paciente.
+                    </p>
+
+                    <p>
+                        Nos casos em que a cirurgia se mostra a melhor estratégia
+                        terapêutica, realizo procedimentos por meio de técnicas
+                        minimamente invasivas, incluindo cirurgias endoscópicas
+                        nasais e acessos transorais com o auxílio da cirurgia
+                        robótica.
+                    </p>
+
+                </div>
+
             </div>
 
         </div>
 
-        <!-- BOTÃO -->
-        <div class="mt-6 flex justify-center">
-    <a href="#sobre"
-       class="inline-flex border-2 border-white hover:bg-white hover:text-[#0f4c81] font-semibold text-sm md:text-base px-6 md:px-8 py-2 md:py-3 rounded-full transition-all duration-300 shadow-lg">
-        Conheça o Médico
-    </a>
-</div>
-
     </div>
-
-</div>
-
-    <!-- SAIBA MAIS -->
-    <div class="hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center text-white text-sm">
-        <span class="opacity-75 mb-2">Saiba mais</span>
-        <span class="fa fa-chevron-down animate-bounce text-xl"></span>
-    </div>
-
-    <!-- WHATSAPP -->
-    <!-- WHATSAPP COM TOOLTIP -->
-<div class="fixed bottom-6 right-6 z-[9999] group">
-
-    <!-- TOOLTIP 
-    <span class="absolute right-20 top-1/2 -translate-y-1/2 
-                 bg-gray-900 text-white text-sm px-3 py-2 rounded-lg
-                 opacity-0 group-hover:opacity-100
-                 transition-all duration-300 whitespace-nowrap shadow-lg">
-        
-    </span> -->
-
-    <!-- BOTÃO -->
-    <a href="#"
-       data-whatsapp-link
-       class="whatsapp-float bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:bg-[#20ba5a] transition-all duration-300"
-       aria-label="Falar no WhatsApp">
-
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-9 h-9 fill-current">
-            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157z"/>
-        </svg>
-
-    </a>
-
-</div>
 
 </section>
 
-    <!-- SOBRE O MÉDICO -->
-    <section id="sobre" class="py-14 md:py-20 bg-[#f8fafc] border-b-4 border-[#0f4c81]">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-12 gap-12 items-start">
-                <!-- Fotos -->
-                <div class="lg:col-span-7">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="rounded-3xl overflow-hidden shadow-xl">
-                       <picture>
-    <source srcset="./assets/img/consultorio_1.jxl" type="image/jxl">
-    <source srcset="./assets/img/consultorio_1.webp" type="image/webp">
+ <!-- ==================================================
+     FORMAÇÃO E QUALIFICAÇÕES
+================================================== -->
 
-    <img 
-        src="./assets/img/consultorio_1.jpeg"
-        alt="Recepção Clínica Otorrino Iguatemi"
-        loading="lazy"
-        class="w-full h-full object-cover"
-    >
-</picture>
-                        </div>
-                        <div class="rounded-3xl overflow-hidden shadow-xl">
-                        <picture>
-                            <source srcset="./assets/img/consultorio_2.jxl" type="image/jxl">
-                            <source srcset="./assets/img/consultorio_2.webp" type="image/webp">
+<section id="formacao" class="formacao-section">
 
-                            <img 
-                                src="./assets/img/consultorio_2.jpeg"
-                                alt="Consultório Dr. André Brandão"
-                                loading="lazy"
-                                class="w-full h-full object-cover"
-                            >
-                        </picture>
-                            <source srcset="" type=""> src="./assets/img/consultorio_2.jpeg" type="image/jpeg" loading="lazy"   alt="Consultório Dr. André Brandão" class="w-full h-full object-cover">
-                            </picture>
-                        </div>
-                        <div class="rounded-3xl overflow-hidden shadow-xl">
-                        <picture>
-    <source srcset="./assets/img/consultorio_3.jxl" type="image/jxl">
-    <source srcset="./assets/img/consultorio_3.webp" type="image/webp">
+    <div class="formacao-container">
 
-    <img
-        src="./assets/img/consultorio_3.jpeg"
-        alt="Recepção Clínica Otorrino Iguatemi"
-        loading="lazy"
-        class="w-full h-full object-cover"
-    >
-</picture>
-                        </div>
-                        <div class="rounded-3xl overflow-hidden shadow-xl">
-                        <picture>
-                            <source srcset="./assets/img/consultorio_4.jxl" type="image/jxl">
-                            <source srcset="./assets/img/consultorio_4.webp" type="image/webp">
+        <!-- CABEÇALHO -->
+        <div class="formacao-header">
 
-                            <img
-                                src="./assets/img/consultorio_4.jpeg"
-                                alt="Consultório Dr. André Brandão"
-                                loading="lazy"
-                                class="w-full h-full object-cover"
-                            >
-                        </picture>
-                        </div>
-                    </div>
-                    
-                                   </div>
-                
-                <!-- Texto -->
-                <div class="lg:col-span-5">
-                    <div class="uppercase text-[#00a3d8] text-sm font-semibold tracking-widest">Sobre o Médico</div>
-                    <h2 class="text-3xl md:text-3xl md:text-5xl font-bold text-[#0f4c81] heading-font mt-3 leading-tight">Dr. André Brandão</h2>
-                    
-                    <div class="prose prose-lg mt-8 text-gray-700 leading-relaxed">
-                        <p>Sou médico otorrinolaringologista, com atuação em Otorrinolaringologia geral e foco em <strong>Medicina do Sono</strong> e <strong>cirurgias avançadas da via aérea</strong>.</p>
-                       <p>Realizo atendimento de pacientes com doenças do ouvido, nariz e garganta, bem como com alterações relacionadas ao ronco, à apneia obstrutiva do sono e a outros distúrbios respiratórios do sono.</p>
-                        <p>Minha prática é baseada em avaliação clínica cuidadosa, individualizada e fundamentada em evidências científicas, respeitando a necessidade específica de cada paciente, desde o tratamento clínico até as opções cirúrgicas.</p>
-                        <p>Nos casos em que a cirurgia se mostra a melhor estratégia terapêutica, realizo procedimentos por meio de técnicas minimamente invasivas, incluindo cirurgias endoscópicas nasais e acessos transorais com o auxílio da cirurgia robótica.</p>
-                    </div>
-                    <br><br>
-<!---
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 md:mt-20">
-                        <div class="flex gap-4">
-                            <div class="w-10 h-10 bg-emerald-100 rounded-2xl flex items-center justify-center text-emerald-600 text-2xl">❤️</div>
-                            <div>
-                                <p class="font-semibold">Atendimento Humanizado</p>
-                                <p class="text-sm text-gray-600">Cuidado individual e personalizado</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="w-10 h-10 bg-sky-100 rounded-2xl flex items-center justify-center text-sky-600 text-2xl">📊</div>
-                            <div>
-                                <p class="font-semibold">Evidências Científicas</p>
-                                <p class="text-sm text-gray-600">Tratamento baseado em estudos atualizados</p>
-                            </div>
-                        </div>
-                    </div> -->
+            <div class="formacao-subtitulo">
+                QUALIFICAÇÃO
+            </div>
 
-</div>
+            <h2 class="formacao-titulo">
+                Formação e Qualificações
+            </h2>
+
+            <p class="formacao-descricao">
+                Uma trajetória de excelência e constante atualização científica,
+                com formação nacional e internacional.
+            </p>
+
         </div>
-    </div>
-    </div>
 
-                   <p></p>
-    </section>
+        <!-- GRID DE FORMAÇÃO -->
+        <div class="formacao-grid">
 
-    <!-- FORMAÇÃO ACADÊMICA -->
-    <section id="formacao" class="py-14 md:py-20 bg-[#f8fafc] border-b-4 border-[#0f4c81]">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <div class="uppercase text-[#00a3d8] text-sm font-semibold tracking-widest">QUALIFICAÇÃO</div>
-                <h2 class="text-3xl md:text-5xl font-bold text-[#0f4c81] heading-font mt-3">Formação Acadêmica</h2>
-                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-                    Uma trajetória de excelência e constante atualização científica, com formação nacional e internacional.
+            <!-- CARD 01 -->
+            <article class="formacao-card">
+
+                <div class="formacao-card-header">
+
+                    <div class="formacao-icone">
+                        🎓
+                    </div>
+
+                    <span class="formacao-tag azul">
+                        Menção Honrosa
+                    </span>
+
+                </div>
+
+                <h3>Graduação em Medicina</h3>
+
+                <p>
+                    FMT – Faculdade de Medicina
                 </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Cards de formação (mantidos iguais) -->
-                <div class="bg-white rounded-3xl p-8 shadow hover:shadow-xl transition-all">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-10 h-10 bg-blue-100 rounded-2xl flex items-center justify-center text-2xl">🎓</div>
-                        <span class="px-4 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Menção Honrosa</span>
+
+            </article>
+
+            <!-- CARD 02 -->
+            <article class="formacao-card">
+
+                <div class="formacao-card-header">
+
+                    <div class="formacao-icone">
+                        🏅
                     </div>
-                    <h3 class="font-semibold text-xl">Graduação em Medicina</h3>
-                    <p class="text-gray-600">FMT - Faculdade de Medicina</p>
+
+                    <span class="formacao-tag amarelo">
+                        Especialização Completa
+                    </span>
+
                 </div>
-                
-                <div class="bg-white rounded-3xl p-8 shadow hover:shadow-xl transition-all">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-10 h-10 bg-amber-100 rounded-2xl flex items-center justify-center text-2xl">🏅</div>
-                        <span class="px-4 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-full">Especialização Completa</span>
+
+                <h3>Residência Médica</h3>
+
+                <p>
+                    Otorrinolaringologia
+                </p>
+
+            </article>
+
+            <!-- CARD 03 -->
+            <article class="formacao-card">
+
+                <div class="formacao-card-header">
+
+                    <div class="formacao-icone">
+                        🔬
                     </div>
-                    <h3 class="font-semibold text-xl">Residência Médica</h3>
-                    <p class="text-gray-600">Otorrinolaringologia</p>
+
+                    <span class="formacao-tag verde">
+                        Tecnologia de Ponta
+                    </span>
+
                 </div>
-                
-                <div class="bg-white rounded-3xl p-8 shadow hover:shadow-xl transition-all">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-10 h-10 bg-emerald-100 rounded-2xl flex items-center justify-center text-2xl">🔬</div>
-                        <span class="px-4 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium rounded-full">Tecnologia de Ponta</span>
+
+                <h3>Formação em Cirurgia Robótica</h3>
+
+                <p>
+                    IDOR – Instituto D'Or
+                </p>
+
+            </article>
+
+            <!-- CARD 04 -->
+            <article class="formacao-card">
+
+                <div class="formacao-card-header">
+
+                    <div class="formacao-icone">
+                        🛏️
                     </div>
-                    <h3 class="font-semibold text-xl">Formação em Cirurgia Robótica</h3>
-                    <p class="text-gray-600">IDOR - Instituto D'Or</p>
+
+                    <span class="formacao-tag roxo">
+                        Especialista em Sono
+                    </span>
+
                 </div>
-                
-                <div class="bg-white rounded-3xl p-8 shadow hover:shadow-xl transition-all">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-10 h-10 bg-purple-100 rounded-2xl flex items-center justify-center text-2xl">🛏️</div>
-                        <span class="px-4 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-full">Especialista em Sono</span>
+
+                <h3>Capacitação em Medicina do Sono</h3>
+
+                <p>
+                    Instituto do Sono – São Paulo
+                </p>
+
+            </article>
+
+            <!-- CARD 05 -->
+            <article class="formacao-card">
+
+                <div class="formacao-card-header">
+
+                    <div class="formacao-icone">
+                        📘
                     </div>
-                    <h3 class="font-semibold text-xl">Capacitação em Medicina do Sono</h3>
-                    <p class="text-gray-600">Instituto do Sono - São Paulo</p>
+
+                    <span class="formacao-tag ciano">
+                        Gestão Estratégica
+                    </span>
+
                 </div>
-                
-                <div class="bg-white rounded-3xl p-8 shadow hover:shadow-xl transition-all">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-10 h-10 bg-sky-100 rounded-2xl flex items-center justify-center text-2xl">📘</div>
-                        <span class="px-4 py-1 bg-sky-100 text-sky-700 text-xs font-medium rounded-full">Gestão Estratégica</span>
+
+                <h3>Pós-graduação em Gestão em Saúde</h3>
+
+                <p>
+                    FGV – Fundação Getúlio Vargas
+                </p>
+
+            </article>
+
+            <!-- CARD 06 -->
+            <article class="formacao-card">
+
+                <div class="formacao-card-header">
+
+                    <div class="formacao-icone">
+                        🌍
                     </div>
-                    <h3 class="font-semibold text-xl">Pós-graduação em Gestão em Saúde</h3>
-                    <p class="text-gray-600">FGV - Fundação Getúlio Vargas</p>
+
+                    <span class="formacao-tag rosa">
+                        Formação Internacional
+                    </span>
+
                 </div>
-                <div class="bg-white rounded-3xl p-8 shadow hover:shadow-xl transition-all">
-                                 <div class="flex items-center gap-3 mb-4">
-                        <div class="bg-rose-50 p-3 rounded-2xl flex items-center justify-center text-2xl shadow-sm">🌍 </DIV> 
-                        <span class="bg-rose-50 text-rose-600 px-5 py-1.5 rounded-full text-sm font-semibold">Formação Internacional</span>
-                    </div>
-                    <h3 class="font-semibold text-xl"> IVPP — Sleep Surgery Department</h3>
-                    <p class="text-gray-600">University of Pennsylvania (UPenn)</p>
-                </div>
-                </div>
-            </div>
+
+                <h3>
+                    IVPP — Sleep Surgery Department
+                </h3>
+
+                <p>
+                    University of Pennsylvania (UPenn)
+                </p>
+
+            </article>
+
         </div>
-   
 
-    <!-- Seção: Experiência Internacional (Inserir abaixo da Formação Acadêmica) -->
-<div class="mt-16 md:mt-24 max-w-6xl mx-auto px-4">
-    
-    <!-- Título da Seção (Opcional, caso queira separar os blocos) -->
-    <!-- <h2 class="text-2xl font-bold text-slate-800 mb-8">Experiência Internacional</h2> -->
+         
+        <!-- EXPERIÊNCIA INTERNACIONAL -->
 
-    <!-- Card Principal Estilo 50/50 -->
-    <div class="flex flex-col md:flex-row bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden">
-        
-        <!-- LADO ESQUERDO: Imagem -->
-        <div class="w-full md:w-1/2 h-[350px] md:h-auto">
+<!-- TÍTULO DA SEÇÃO -->
+<h2 class="experiencia-secao-titulo">
+    Experiência Internacional
+</h2>
+
+<div class="experiencia-internacional">
+
+    <div class="experiencia-card">
+
+        <!-- FOTO -->
+        <div class="sobre-foto">
+
             <picture>
-    <source srcset="./assets/img/foto_com_Raj_Dedhia.jxl" type="image/jxl">
-    <source srcset="./assets/img/foto_com_Raj_Dedhia.webp" type="image/webp">
+                <source
+                    srcset="./assets/img/foto_com_Raj_Dedhia.jxl"
+                    type="image/jxl">
 
-    <img
-        src="./assets/img/foto_com_Raj_Dedhia.jpeg"
-        alt="Dr. André Brandão e Dr. Raj Dedhia na UPenn"
-        loading="lazy"
-        class="w-full h-full object-cover"
-    >
-</picture>
-            
-        
+                <source
+                    srcset="./assets/img/foto_com_Raj_Dedhia.webp"
+                    type="image/webp">
+
+                <img
+                    src="./assets/img/foto_com_Raj_Dedhia.jpeg"
+                    alt="Dr. André Brandão e Dr. Raj Dedhia na University of Pennsylvania"
+                    loading="lazy">
+            </picture>
+
         </div>
 
-        <!-- LADO DIREITO: Texto (Estilo Minimalista solicitado) -->
-        <div class="w-full md:w-1/2 flex flex-col justify-center p-6 md:p-16">
-            
-            <!-- Tag Superior -->
-            <span class="text-[11px] md:text-xs font-bold uppercase tracking-[0.2em] text-blue-700 mb-3">
-                Experiência Internacional
-            </span>
+        <!-- TEXTO -->
+        <div class="experiencia-conteudo">
 
-            <!-- Título Principal -->
-            <h3 class="text-2xl md:text-3xl font-bold text-slate-900 leading-tight mb-6">
+            <h3 class="experiencia-titulo">
                 Penn Sleep Surgery — University of Pennsylvania
             </h3>
 
-            <!-- Texto de Descrição -->
-            <div class="space-y-4 text-slate-600 leading-relaxed text-sm md:text-base">
+            <div class="experiencia-texto">
+
                 <p>
-                    Registro ao lado do Dr. Raj Dedhia, durante período de formação complementar no 
-                    <strong class="text-slate-900 font-bold text-opacity-90">Sleep Surgery Department da University of Pennsylvania</strong>, 
-                    centro de excelência na área.
+                    Registro ao lado do Dr. Raj Dedhia durante período de formação complementar no Sleep Surgery Department da University of Pennsylvania, um dos centros de referência mundial em Medicina do Sono e Cirurgia da Via Aérea.
                 </p>
+
                 <p>
-                    Vivência em técnicas avançadas e integração com equipes de referência mundial.
+                    Experiência voltada ao aperfeiçoamento de técnicas avançadas de diagnóstico e tratamento, com integração a equipes multidisciplinares e contato com tecnologias de ponta utilizadas em centros internacionais de excelência.
                 </p>
+
             </div>
-            
+
         </div>
+
     </div>
+
 </div>
- </section>
-    <!-- ESPECIALIDADES -->
-    <!--
-    <section id="especialidades" class="py-14 md:py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <div class="uppercase text-[#00a3d8] text-sm font-semibold tracking-widest">ESPECIALIDADES</div>
-                <h2 class="text-3xl md:text-5xl font-bold text-[#0f4c81] heading-font mt-3">Áreas de Atuação</h2>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-1 transition-all">
-                    <div class="text-4xl mb-6">🛏️</div>
-                    <h3 class="font-semibold text-2xl mb-3">Medicina do Sono</h3>
-                    <p class="text-gray-600">Diagnóstico e tratamento completo de distúrbios respiratórios do sono.</p>
-                </div>
-                <div class="bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-1 transition-all">
-                    <div class="text-4xl mb-6">😴</div>
-                    <h3 class="font-semibold text-2xl mb-3">Ronco e Apneia do Sono</h3>
-                    <p class="text-gray-600">Abordagem clínica e cirúrgica para melhorar a qualidade do sono.</p>
-                </div>
-                <div class="bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-1 transition-all">
-                    <div class="text-4xl mb-6">🪄</div>
-                    <h3 class="font-semibold text-2xl mb-3">Cirurgia Avançada da Via Aérea</h3>
-                    <p class="text-gray-600">Técnicas minimamente invasivas e robótica.</p>
-                </div>
-                <div class="bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-1 transition-all">
-                    <div class="text-4xl mb-6">👂</div>
-                    <h3 class="font-semibold text-2xl mb-3">Otorrinolaringologia Geral</h3>
-                    <p class="text-gray-600">Doenças do ouvido, nariz e garganta em adultos e crianças.</p>
-                </div>
-                <div class="bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-1 transition-all">
-                    <div class="text-4xl mb-6">🔬</div>
-                    <h3 class="font-semibold text-2xl mb-3">Cirurgias Endoscópicas Nasais</h3>
-                    <p class="text-gray-600">Procedimentos minimamente invasivos com alta precisão.</p>
-                </div>
-                <div class="bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-1 transition-all">
-                    <div class="text-4xl mb-6">🤖</div>
-                    <h3 class="font-semibold text-2xl mb-3">Cirurgia Robótica da Via Aérea</h3>
-                    <p class="text-gray-600">Acesso transoral com tecnologia de última geração.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
-    <!-- LOCAIS DE ATENDIMENTO -->
-    
-    <section id="atendimento" class="py-20 bg-[#f8fafc] text-white border-b-4 border-[#00a3d8]">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <div class="uppercase text-[#00a3d8] text-sm font-semibold tracking-widest">ONDE ATENDO</div>
-                <h2 class="text-3xl md:text-5xl font-bold text-[#0f4c81]  heading-font mt-3">Locais de Atendimento</h2>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+   <!-- ==================================================
+     LOCAIS DE ATENDIMENTO
+================================================== -->
+
+<section id="atendimento" class="atendimento-section">
+
+    <div class="atendimento-container">
+
+        <div class="atendimento-header">
+
+            <div class="formacao-subtitulo">
+                ONDE ATENDO
             </div>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-10 border border-white/20">
-                    <h3 class="text-3xl text-[#0f4c81] font-semibold mb-6">Clínica Otorrino Iguatemi</h3>
-                    <p class="text-xl text-black">Edifício Mundo Plaza</p>
-                    <p class="text-lg text-black">Av. Tancredo Neves, 620 – Salas 1810 a 1812, Salvador - BA</p>
-                    <div class="mt-8 space-y-4">
-                        <p class="text-black text-lg font-medium">
-    <span class="icon-phone">&#9743;</span>
-    (71) 3015-0100 | (71) 3015-0200
-</p>
-                        <a href="" data-whatsapp-link 
-                           target="_blank"
-                           class="flex items-center gap-3 text-[#22c55e] font-semibold text-lg">
-                           <span class="icon-whatsapp">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20">
-    <path fill="#25D366" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.1 0-65.6-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.3-16.4-14.6-27.4-32.7-30.7-38.2-3.2-5.6-.4-8.6 2.4-11.4 2.6-2.5 5.6-6.5 8.3-9.7 2.8-3.3 3.8-5.7 5.6-9.4 1.9-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.3 5.7 23.7 9.1 31.7 11.7 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-  </svg>
-</span>
-                            (71) 99663-9409
-                        </a>
+
+            <h2 class="formacao-titulo">
+                Locais de Atendimento
+            </h2>
+
+        </div>
+
+        <div class="atendimento-grid">
+
+            <!-- Clínica -->
+
+            <article class="formacao-card">
+
+                <div class="formacao-card-header">
+
+                    <div class="formacao-icone">
+                        🏥
                     </div>
+
+                    <h3>Clínica Otorrino Iguatemi</h3>
+
                 </div>
-                
-                <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-10 border border-white/20">
-                    <h3 class="text-3xl text-[#0f4c81] font-semibold mb-6">Hospital Santa Izabel</h3>
-                    <p class="text-lg text-black"> Atendimento hospitalar e cirurgias</p>
-                 <div class="mt-8 space-y-4">
-                    <p class="text-black text-lg font-medium block mt-12 " >
-    <span class="icon-phone">&#9743;</span>
-    (71) 2203-8100
-</p>
+
+                <p>
+                    Edifício Mundo Plaza
+                </p>
+
+                <p>
+                    Av. Tancredo Neves, 620 – Salas 1810 a 1812,
+                    Salvador - BA
+                </p>
+
+                <br>
+
+                <p>
+                    ☎ (71) 3015-0100 | (71) 3015-0200
+                </p>
+
+                <p>
+                    📱 (71) 99663-9409
+                </p>
+
+            </article>
+
+            <!-- Hospital -->
+
+            <article class="formacao-card">
+
+                <div class="formacao-card-header">
+
+                    <div class="formacao-icone">
+                        🏨
+                    </div>
+
+                    <h3>Hospital Santa Izabel</h3>
+
                 </div>
-            </div>
+
+                <p>
+                    Atendimento hospitalar e cirurgias
+                </p>
+
+                <br>
+
+                <p>
+                    ☎ (71) 2203-8100
+                </p>
+
+            </article>
+
         </div>
-    </section>
 
-    <!-- FINAL CTA -->
-    
+    </div>
 
-    <!-- FOOTER -->
-    <footer class="bg-[#f8fafc] text-white py-16">
-        <div class="max-w-7xl mx-auto px-6 text-center md:text-left">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
-                <div>
-                    <h1 class="text-2xl md:text-3xl font-bold text-gray-400 leading-tight">Dr. André Brandão</h1>
-                    <p class="text-gray-400 mt-2">Otorrinolaringologia • Medicina do Sono</p>
-                </div>
-                <div class="text-sm text-gray-400">
-                    © 2026 Dr. André Brandão • otorrinoandrebrandao.com.br<br>
+</section>
+
+  <!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer class="footer-site">
+
+    <div class="footer-container">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <h2>
+                    Dr. André Brandão
+                </h2>
+
+                <p>
+                    Otorrinolaringologia • Medicina do Sono
+                </p>
+
+            </div>
+
+            <div class="footer-info">
+
+                <small>
+                    &copy; <span id="ano"></span>
+                    Dr. André Brandão • otorrinoandrebrandao.com.br
+                </small>
+
+                <small>
                     Todos os direitos reservados
-                    <br><br>
-                    <div id="site-version"></div>
-                </div>
+                </small>
+
+                <div id="site-version"></div>
+
             </div>
-            
+
         </div>
-    </footer>
 
-        
+    </div>
 
-<!--  outros códigos do site... -->
-
-<script>
-  const whatsappUrl =
-    'https://wa.me/5571996639409?text=Olá, gostaria de agendar uma consulta com o Dr. André Brandão.';
-
-  document.querySelectorAll('[data-whatsapp-link]').forEach(link => {
-    link.href = whatsappUrl;
-    link.target = '_blank';
-  });
-</script>
-
- <!-- Arquivo da versão -->
-    <script src="version.js"></script>
-
-    <!-- Exibir versão -->
-    <script>
-      document.getElementById("site-version").innerText =
-        "Versão: " + SITE_VERSION;
-    </script>
-
-<!-- BOTÃO ACESSIBILIDADE PADRÃO OFICIAL -->
-<!-- BOTÃO + TOOLTIP -->
-<div class="fixed bottom-6 left-6 z-[9999] group">
-
-    <!-- Tooltip 
-    <div class="absolute left-20 top-1/2 -translate-y-1/2
-bg-blue-950 text-white text-sm px-4 py-2 rounded-xl
-opacity-0 group-hover:opacity-100
-transition-all duration-300 whitespace-nowrap shadow-lg">
-
-        
-    </div> -->
-
-    <!-- Botão Acessibulidade -->
-  <button id="accessibilityBtn"
-    class="fixed bottom-6 left-6 z-[9999] w-16 h-16 rounded-full bg-blue-600 shadow-xl flex items-center justify-center hover:scale-110 transition">
-
-    <svg xmlns="http://www.w3.org/2000/svg"
+</footer>
+    
+    <!-- ── ACESSIBILIDADE ───────────────────────────────────── -->
+    <!-- BOTÃO -->
+    <button id="accessibilityBtn" class="accessibility-button">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="none"
         stroke="white"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
-        class="w-8 h-8">
+      >
+        <circle cx="12" cy="5" r="2" />
+        <path d="M5 9h14" />
+        <path d="M12 7v6" />
+        <path d="M9 21l3-8 3 8" />
+      </svg>
+    </button>
 
-        <circle cx="12" cy="5" r="2"/>
-        <path d="M5 9h14"/>
-        <path d="M12 7v6"/>
-        <path d="M9 21l3-8 3 8"/>
+    <!-- MENU -->
+    <div id="accessibilityMenu" class="accessibility-menu hidden">
 
-    </svg>
-</button>
+    <h3>Acessibilidade</h3>
 
-</div>
+    <div class="accessibility-options">
 
-<!-- MENU -->
-<div id="accessibilityMenu"
-    class="hidden fixed bottom-24 left-6 z-[9999] w-72 bg-white rounded-3xl shadow-2xl border p-5">
-
-    <h3 class="font-semibold text-lg mb-4 text-[#0f4c81]">
-        Acessibilidade
-    </h3>
-
-    <div class="flex flex-col gap-3">
-
-        <button onclick="document.body.classList.toggle('text-xl')"
-            class="text-left px-4 py-3 rounded-xl hover:bg-gray-100">
+        <button id="increaseText" class="accessibility-option">
             🔎 Aumentar Texto
         </button>
 
-        <button onclick="document.body.classList.toggle('contrast-mode')"
-            class="text-left px-4 py-3 rounded-xl hover:bg-gray-100">
+        <button id="decreaseText" class="accessibility-option">
+            ➖ Diminuir Texto
+        </button>
+
+        <button id="toggleContrast" class="accessibility-option">
             🌗 Alto Contraste
         </button>
 
-        <button onclick="location.reload()"
-            class="text-left px-4 py-3 rounded-xl hover:bg-gray-100">
+        <button id="grayscaleMode" class="accessibility-option">
+    ⚫ Escala de Cinza
+</button>
+
+        <button id="highlightLinks" class="accessibility-option">
+            🔗 Destacar Links
+        </button>
+
+        <button id="readPage" class="accessibility-option">
+            🔊 Ouvir Página
+        </button>
+
+        <button id="resetAccessibility" class="accessibility-option">
             ↺ Restaurar
         </button>
 
     </div>
+
 </div>
 
-<style>
-.contrast-mode{
-    background:#000!important;
-    color:#fff!important;
-}
-.contrast-mode section,
-.contrast-mode footer,
-.contrast-mode header{
-    background:#000!important;
-    color:#fff!important;
-}
-</style>
+<!-- ── Botão Whatsapp  ──────────────────────────────────────── -->
+ 
+<a
+  href="#"
+  class="whatsapp-button"
+  data-whatsapp-link
+  target="_blank"
+>
+  <span class="icon-whatsapp">
 
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 448 512"
+      aria-hidden="true"
+    >
+      <path
+        fill="#ffffff"
+        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222
+        0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27
+        106.1 27h.1c122.3 0 224.1-99.6 224.1-222
+        0-59.3-25.2-115-67.1-157z"
+      />
+    </svg>
 
-<script>
-const btn = document.getElementById('accessibilityBtn');
-const menu = document.getElementById('accessibilityMenu');
+  </span>
+</a>
 
-btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-});
-</script>
-
-
-</body>
+    <!-- ── JAVASCRIPTS ──────────────────────────────────────── -->
+    <script src="js/main.js"></script>
+    <script src="js/menu-mobile.js"></script>
+    <script src="js/accessibility.js"></script>
+    <script src="js/version.js"></script>
+    <script src="js/whatsapp.js"></script>
+  </body>
 </html>

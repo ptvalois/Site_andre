@@ -1,0 +1,67 @@
+/* ==================================================
+   CORES GLOBAIS
+================================================== */
+
+:root {
+  /* Marca */
+
+  --color-primary: #0f4c81;
+  --color-secondary: #00a3d8;
+
+  /* Fundos */
+
+  --color-background: #f8fafc;
+  --color-white: #ffffff;
+
+  /* Textos */
+
+  --color-text: #4b5563;
+  --color-text-secondary: #64748b;
+  --color-text-light: #94a3b8;
+  --color-text-muted: #475569;
+
+  /* Bordas */
+
+  --color-border: #e5e7eb;
+
+  /* Sucesso */
+
+  --color-success: #22c55e;
+  --color-success-hover: #16a34a;
+
+  /* Sombras */
+
+  --shadow-sm: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.12);
+
+  /* Bordas arredondadas */
+
+  --radius-md: 20px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* Container */
+
+  --container-width: 1280px;
+
+  /* Footer */
+
+  --color-footer-bg: #1e293b;
+
+  /* Hero */
+
+  --color-whatsapp: #25d366;
+
+  /* Sombras */
+
+  --shadow-photo: 0 20px 60px rgba(0, 0, 0, 0.35);
+
+  --shadow-card-hover: 0 18px 35px rgba(0, 0, 0, 0.12);
+
+  --shadow-button: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+  --shadow-button-hover: 0 12px 28px rgba(0, 0, 0, 0.2);
+
+  --shadow-whatsapp: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
