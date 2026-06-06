@@ -21,42 +21,107 @@
 
 
     <title>Dr. André Brandão | Otorrinolaringologia • Medicina do Sono</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
   </head>
   <body>
     <!-- ── HEADER ──────────────────────────────────────────── -->
-    <header class="site-header">
-      <div class="inner">
-        <div class="logo">
+ <header class="header">
+
+    <div class="container header-content">
+
+        <!-- LOGO -->
+
+       <div class="logo">
           <h1>Dr. André Brandão</h1>
           <p>Otorrinolaringologia • Medicina do Sono</p>
         </div>
 
+        <!-- MENU DESKTOP -->
+
         <nav class="main-nav">
-          <a href="#home">Início</a>
+
+          <a href="#home">início</a>
           <a href="#sobre">Sobre</a>
           <a href="#formacao">Formação</a>
+         <a href="#quando-consultar">Quando consultar?</a>
           <a href="#atendimento">Atendimento</a>
+          
         </nav>
 
-     <a
-  href="#"
-  data-whatsapp-link
-  class="btn-agendar">
-  Agende sua Consulta
-</a>
+    
 
-      
+        <!-- BOTÃO MOBILE -->
 
-      <nav id="mobileMenu" class="mobile-menu">
-        <a href="#home">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#formacao">Formação</a>
-        <a href="#atendimento">Atendimento</a>
-        <a href="#" data-whatsapp-link class="btn-agendar-mobile"
-          >Agende sua Consulta</a
-        >
-      </nav>
-    </header>
+        <button
+            class="menu-toggle" id="menuToggle"
+            aria-label="Abrir menu">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+   </header>    
+
+<!-- OVERLAY -->
+
+<div
+    class="menu-overlay"
+    id="menuOverlay">
+</div>
+
+<!-- MENU MOBILE -->
+
+<nav
+    class="mobile-menu"
+    id="mobileMenu">
+
+    <button
+        class="menu-close"
+        id="menuClose"
+        aria-label="Fechar menu">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+    <ul>
+
+        <li>
+            <a href="#home">Início</a>
+        </li>
+
+        <li>
+            <a href="#sobre">Sobre</a>
+        </li>
+
+        <li>
+            <a href="#formacao">Formação</a>
+        </li>
+
+        <li>
+            <a href="#quando-consultar">Quando consultar?</a>
+        </li>
+
+        <li>
+            <a href="#atendimento">
+                Atendimento
+            </a>
+        </li>
+
+    </ul>
+
+    
+
+</nav>
+
+  
+
+    
 
   <!-- ── HERO ────────────────────────────────────────────── -->
 <section id="home" class="hero-section">
@@ -68,43 +133,49 @@
         src="./assets/img/foto_1_formatura.jpeg"
         alt="Dr. André Brandão"
       />
+       <!-- BOTÃO CONHEÇA O MÉDICO -->
+    <div class="hero-button-container">
+      <a href="#sobre" class="btn-conheca-medico">
+       Conheça o Médico
+      </a>
+    </div>
     </div>
 
     <!-- CARDS -->
     <div class="hero-cards">
 
       <div class="card-especialidade">
-        <span class="emoji-card">🛏️</span>
+        <span class="emoji-card"></span>
         <h3>Medicina do Sono</h3>
         <p>Diagnóstico e tratamento completo.</p>
       </div>
 
       <div class="card-especialidade">
-        <span class="emoji-card">😴</span>
+        <span class="emoji-card"></span>
         <h3>Ronco e Apneia</h3>
         <p>Tratamento clínico e cirúrgico.</p>
       </div>
 
       <div class="card-especialidade">
-        <span class="emoji-card">🪄</span>
-        <h3>Via Aérea</h3>
+        <span class="emoji-card"></span>
+        <h3>Cirugia do Sono</h3>
         <p>Técnicas minimamente invasivas.</p>
       </div>
 
       <div class="card-especialidade">
-        <span class="emoji-card">👂</span>
+        <span class="emoji-card"></span>
         <h3>Otorrino Geral</h3>
         <p>Ouvido, nariz e garganta.</p>
       </div>
 
       <div class="card-especialidade">
-        <span class="emoji-card">🔬</span>
+        <span class="emoji-card"></span>
         <h3>Cirurgias Nasais</h3>
         <p>Alta precisão endoscópica.</p>
       </div>
 
       <div class="card-especialidade">
-        <span class="emoji-card">🤖</span>
+        <span class="emoji-card"></span>
         <h3>Cirurgia Robótica</h3>
         <p>Tecnologia avançada.</p>
       </div>
@@ -112,12 +183,7 @@
     </div>
     <!-- FIM DOS CARDS -->
 
-    <!-- BOTÃO CONHEÇA O MÉDICO -->
-    <div class="hero-button-container">
-      <a href="#sobre" class="btn-conheca-medico">
-       Conheça o Médico
-      </a>
-    </div>
+   
 
   </div>
 </section>
@@ -196,34 +262,58 @@
                 <div class="sobre-texto">
 
                     <p>
-                        Sou médico otorrinolaringologista, com atuação em
-                        Otorrinolaringologia geral e foco em
-                        <strong>Medicina do Sono</strong> e
-                        <strong>cirurgias avançadas da via aérea</strong>.
+                        Médico otorrinolaringologista, com atuação voltada ao diagnóstico e tratamento dos 
+                        <strong>distúrbios respiratórios do sono</strong> com especial atenção ao
+                        <strong>ronco e à apneia obstrutiva do sono</strong>.
                     </p>
 
                     <p>
-                        Realizo atendimento de pacientes com doenças do ouvido,
-                        nariz e garganta, bem como com alterações relacionadas ao
-                        ronco, à apneia obstrutiva do sono e a outros distúrbios
-                        respiratórios do sono.
+                       A abordagem parte de uma avaliação médica individualizada, que considera não apenas a doença.
                     </p>
 
                     <p>
-                        Minha prática é baseada em avaliação clínica cuidadosa,
-                        individualizada e fundamentada em evidências científicas,
-                        respeitando a necessidade específica de cada paciente.
+                        A condução desses casos requer análise criteriosa dos diferentes <strong>níveis de obstrução da via aérea, </strong>permitindo uma indicação terapêutica mais precisa. 
                     </p>
 
                     <p>
-                        Nos casos em que a cirurgia se mostra a melhor estratégia
-                        terapêutica, realizo procedimentos por meio de técnicas
-                        minimamente invasivas, incluindo cirurgias endoscópicas
-                        nasais e acessos transorais com o auxílio da cirurgia
-                        robótica.
+                        O tratamento pode envolver medidas <strong>clínicas, técnicas minimamente invasivas e cirurgia robótica transoral</strong>, quando houver indicação.
+
                     </p>
 
                 </div>
+                <div class="diferenciais">
+  <div class="diferencial-item">
+    <div class="diferencial-icone atendimento">
+      ❤️
+    </div>
+
+    <div class="diferencial-conteudo">
+      <p class="diferencial-titulo">
+        Atendimento Humanizado
+      </p>
+
+      <p class="diferencial-descricao">
+        Cuidado individual e personalizado
+      </p>
+    </div>
+  </div>
+
+  <div class="diferencial-item">
+    <div class="diferencial-icone evidencia">
+      📊
+    </div>
+
+    <div class="diferencial-conteudo">
+      <p class="diferencial-titulo">
+        Evidências Científicas
+      </p>
+
+      <p class="diferencial-descricao">
+        Tratamento baseado em estudos atualizados
+      </p>
+    </div>
+  </div>
+</div>
 
             </div>
 
@@ -272,15 +362,18 @@
                     </div>
 
                     <span class="formacao-tag azul">
-                        Menção Honrosa
+                        Especialista Responsável
                     </span>
 
                 </div>
 
-                <h3>Graduação em Medicina</h3>
+                <h3>Preceptor de Residência Médica</h3>
 
                 <p>
-                    FMT – Faculdade de Medicina
+                Hospital Santa Casa – Departameento de Otorrinolarigologia / Medicina do Sono 
+                </p>
+                <p>
+                Hospital Santa izabel
                 </p>
 
             </article>
@@ -304,6 +397,9 @@
 
                 <p>
                     Otorrinolaringologia
+                                    </p>
+                                    <p>
+                    Hospital Santa Izabel 
                 </p>
 
             </article>
@@ -313,9 +409,13 @@
 
                 <div class="formacao-card-header">
 
-                    <div class="formacao-icone">
-                        🔬
-                    </div>
+                   <div class="formacao-icone">
+    <img
+        src="assets/img/robot-cirurgia.png"
+        alt="Robô cirúrgico"
+        class="icone-robo"
+    >
+</div>
 
                     <span class="formacao-tag verde">
                         Tecnologia de Ponta
@@ -369,7 +469,7 @@
 
                 </div>
 
-                <h3>Pós-graduação em Gestão em Saúde</h3>
+                <h3>Pós-graduando em Gestão em Saúde</h3>
 
                 <p>
                     FGV – Fundação Getúlio Vargas
@@ -446,7 +546,7 @@
             <div class="experiencia-texto">
 
                 <p>
-                    Registro ao lado do Dr. Raj Dedhia durante período de formação complementar no Sleep Surgery Department da University of Pennsylvania, um dos centros de referência mundial em Medicina do Sono e Cirurgia da Via Aérea.
+                    Registro ao lado do Dr. Raj Dedhia durante período de formação complementar no Sleep Surgery Department da University of Pennsylvania, um dos centros de referência mundial em  Cirurgia do Sono.
                 </p>
 
                 <p>
@@ -467,6 +567,123 @@
 
 </section>
 
+   <!-- ==================================================
+     QUANDO CONSULTAR
+================================================== -->
+
+   <section id="quando-consultar" class="sobre-section">
+
+   <div class="formacao-container">
+
+        <!-- CABEÇALHO -->
+        <div class="formacao-header">
+
+            <div class="formacao-subtitulo">
+                QUANDO CONSULTAR?
+            </div>
+
+            <h3 class="formacao-titulo">
+                Quando Procurar uma Avaliação?
+            </h3>
+
+
+<!-- TEXTO -->
+        <div class="experiencia-conteudo">
+
+           <div class="experiencia-texto">
+
+                <p>
+                   <ul>
+    <li><h3>Ronco alto e frequente</h3></li>
+    <li><h3>Pausas respiratórias durante o sono</h3></li>
+    <li><h3>Sono não reparador</h3></li>
+    <li><h3>Sonolência excessiva durante o dia</h3></li>
+    <li><h3>Dificuldade de adaptação ao CPAP</h3></li>
+</ul>
+                </p>
+
+            </div>
+
+        </div>
+</div>
+    
+</section>
+
+<!-- ==================================================
+    SINAIS DE ALERTA
+================================================== -->
+
+<section id="sinais_alerta" class="sobre-section">
+
+
+
+  <!-- ==================================================
+    SINAIS DE ALERTA
+================================================== -->
+
+<section id="sinais_alerta" class="sobre-section">
+
+    <div class="atendimento-container">
+
+        <!-- CABEÇALHO -->
+        <div class="atendimento-header">
+
+            <div class="formacao-subtitulo">
+                SINAIS DE ALERTA
+            </div>
+
+            <h3 class="formacao-titulo">
+                Apneia do sono não é só ronco — é risco cardiovascular.
+            </h3>
+
+            <p class="formacao-descricao">
+                Está associada a infarto, AVC, arritmias cardíacas e morte súbita.
+                Sintomas como ronco, cansaço ao acordar e sonolência diurna devem ser investigados.
+            </p>
+
+        </div>
+
+        <h2 class="experiencia-secao-titulo">
+            Artigos científicos sobre sinais de alerta da apneia do sono
+        </h2>
+
+        <!-- GRID DE CARDS -->
+        <div class="sinais-grid">
+
+            <article class="sinais-card">
+                <img
+                    src="assets/img/england_jornal.png"
+                    alt="Artigo do England Journal"
+                    class="sinais-card-imagem">
+            </article>
+
+            <article class="sinais-card">
+                <img
+                    src="assets/img/obstrutive_apneia.jpeg"
+                    alt="Obstructive Apnea"
+                    class="sinais-card-imagem">
+            </article>
+
+            <article class="sinais-card">
+                <img
+                    src="assets/img/articles.png"
+                    alt="Long Term Cardiovascular"
+                    class="sinais-card-imagem">
+            </article>
+
+            <article class="sinais-card">
+                <img
+                    src="assets/img/aha_scientific.png"
+                    alt="Obstructive Sleep Apnea"
+                    class="sinais-card-imagem">
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+    
 
 
    <!-- ==================================================
@@ -514,8 +731,7 @@
                     Salvador - BA
                 </p>
 
-                <br>
-
+             
                 <p>
                     ☎ (71) 3015-0100 | (71) 3015-0200
                 </p>
@@ -685,6 +901,9 @@
 
   </span>
 </a>
+
+ <!-- Font Awesome -->
+  
 
     <!-- ── JAVASCRIPTS ──────────────────────────────────────── -->
     <script src="js/main.js"></script>
