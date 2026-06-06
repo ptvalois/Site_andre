@@ -6,6 +6,7 @@
   position: fixed;
   bottom: 24px;
   left: 24px;
+  z-index: 9999;
 
   width: 64px;
   height: 64px;
@@ -117,25 +118,41 @@
 }
 
 /* contraste */
-.contrast-mode {
+html.contrast-mode {
   background: #000 !important;
   color: #fff !important;
 }
 
-.contrast-mode section,
-.contrast-mode div,
-.contrast-mode article,
-.contrast-mode header,
-.contrast-mode footer {
+html.contrast-mode section,
+html.contrast-mode div,
+html.contrast-mode article,
+html.contrast-mode header,
+html.contrast-mode footer {
   background: #000 !important;
   color: #fff !important;
 }
 
-.contrast-mode a {
+html.contrast-mode a {
   color: #ffff00 !important;
 }
 
-/* escala de cinza */
+/* escala de cinza e contraste */
+
 html.grayscale-mode {
-  filter: grayscale(100%);
+  filter: grayscale(100%) !important;
+}
+
+/* escala de cinza */
+html.contrast-mode.grayscale-mode {
+  filter: grayscale(100%) !important;
+}
+
+html.accessibility-links .main-nav a {
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+  color: var(--color-primary) !important;
+}
+
+html.accessibility-links .main-nav a::after {
+  display: none;
 }

@@ -175,6 +175,9 @@
 
 .sobre-texto {
   margin-top: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 .sobre-texto p {
@@ -217,6 +220,11 @@
   line-height: 1.9;
 }
 
+.experiencia-texto {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
 /* ==================================================
    FORMAÇÃO
 ================================================== */
@@ -272,6 +280,12 @@
   background: #eef6ff;
 
   font-size: 1.4rem;
+}
+
+.icone-robo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 .formacao-card h3 {
@@ -330,6 +344,49 @@
 }
 
 /* ==================================================
+   SINAIS DE ALERTA
+================================================== */
+
+.sinais-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.sinais-card {
+  aspect-ratio: 16 / 9;
+  padding: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-white);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-md);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.sinais-card-imagem {
+  max-width: 90%;
+  max-height: 90%;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+}
+.sinais-card:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* ==================================================
    ATENDIMENTO
 ================================================== */
 
@@ -345,4 +402,57 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+}
+
+/* ==========================================
+   DIFERENCIAIS
+========================================== */
+
+.diferenciais {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+
+  margin-top: 3rem;
+}
+
+.diferencial-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.diferencial-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border-radius: 1rem;
+
+  font-size: 1.4rem;
+
+  flex-shrink: 0;
+}
+
+.diferencial-icone.atendimento {
+  background-color: #d1fae5;
+}
+
+.diferencial-icone.evidencia {
+  background-color: #e0f2fe;
+}
+
+.diferencial-titulo {
+  margin-bottom: 0.25rem;
+
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.diferencial-descricao {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
 }

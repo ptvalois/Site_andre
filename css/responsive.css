@@ -51,17 +51,6 @@
     padding: 60px 0;
   }
 
-  /* Header */
-
-  .main-nav,
-  .btn-agendar {
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
   /* Hero */
 
   .hero-inner {
@@ -70,7 +59,9 @@
 
   .hero-foto {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
   }
 
   .hero-foto img {
@@ -105,7 +96,8 @@
   .experiencia-titulo {
     font-size: 1.6rem;
   }
-  /*Footer */
+
+  /* Footer */
 
   .footer-content {
     flex-direction: column;
@@ -114,5 +106,50 @@
 
   .footer-info {
     text-align: center;
+  }
+}
+
+/* ==================================================
+   SOBRE - ATENDIMENTO HUMANIZADO
+================================================== */
+
+@media (max-width: 768px) {
+  .diferenciais {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==================================================
+   MENU RESPONSIVO
+================================================== */
+
+/* Celular e Tablet */
+
+@media (max-width: 991px) {
+  .main-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-content {
+    position: relative;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 992px) {
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: none;
   }
 }
