@@ -212,15 +212,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   /* ==========================================
-   FECHAR MENU MOBILE AO NAVEGAR
+   FECHAR MENU AO MUDAR ORIENTAÇÃO OU TAMANHO
 ========================================== */
 
-  document.querySelectorAll(".mobile-menu a").forEach((link) => {
-    link.addEventListener("click", () => {
-      mobileMenu.classList.remove("active");
-      menuOverlay.classList.remove("active");
+  function fecharMenuMobile() {
+    mobileMenu.classList.remove("active");
+    menuOverlay.classList.remove("active");
+    document.body.style.overflow = "";
+  }
 
-      document.body.style.overflow = "";
-    });
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 992) {
+      fecharMenuMobile();
+    }
+  });
+
+  window.addEventListener("orientationchange", () => {
+    setTimeout(() => {
+      fecharMenuMobile();
+    }, 200);
   });
 });
