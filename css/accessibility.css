@@ -44,12 +44,21 @@
    MENU ACESSIBILIDADE
 ================================================== */
 
+/* ==================================================
+   MENU ACESSIBILIDADE
+================================================== */
+
 .accessibility-menu {
   position: fixed;
   bottom: 96px;
   left: 24px;
 
   width: 288px;
+
+  max-height: calc(100vh - 140px);
+
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 
   padding: 20px;
 
@@ -155,4 +164,26 @@ html.accessibility-links .main-nav a {
 
 html.accessibility-links .main-nav a::after {
   display: none;
+}
+
+/* ==================================================
+   CELULAR HORIZONTAL
+================================================== */
+
+@media (max-height: 500px) {
+  .accessibility-menu {
+    bottom: 12px;
+
+    max-height: calc(100vh - 24px);
+  }
+}
+
+@media (max-width: 768px) {
+  .accessibility-menu {
+    left: 12px;
+    right: 12px;
+
+    width: auto;
+    max-width: none;
+  }
 }

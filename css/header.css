@@ -281,6 +281,6 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
+section[id] {
   scroll-margin-top: 100px;
 }
