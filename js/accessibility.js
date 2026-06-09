@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let current = "";
 
     sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 120;
+      const sectionTop = section.offsetTop - 150;
       const sectionHeight = section.offsetHeight;
 
       if (

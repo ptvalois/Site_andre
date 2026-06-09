@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://otorrinodrandrebrandao.com.br/sitemap.xml

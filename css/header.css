@@ -284,3 +284,17 @@ html {
 section[id] {
   scroll-margin-top: 100px;
 }
+
+/* ==================================================
+   MENU ATIVO
+================================================== */
+
+.main-nav a.active,
+.mobile-menu a.active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.main-nav a.active::after {
+  width: 100%;
+}
